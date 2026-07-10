@@ -32,7 +32,6 @@
     *{box-sizing:border-box;}
     body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;font-size:15px;line-height:1.5;}
     .wrap{max-width:920px;margin:0 auto;padding:28px 20px 80px;}
-
     .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:0;padding-bottom:16px;}
     .gradient-bar{height:5px;background:linear-gradient(90deg,#33427A,#2E5C50,#8a5f19,#6E3D6C,#4B3B8C,#1F6B3F);border-radius:4px;margin-bottom:26px;}
     .masthead .brand{display:flex;align-items:center;gap:12px;}
@@ -40,39 +39,25 @@
     .brand h1{font-family:'Fraunces',serif;font-weight:600;font-size:22px;margin:0;color:var(--primary-deep);letter-spacing:-0.01em;}
     .brand span.tag{display:block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:2px;}
     .datebadge{font-family:'Space Mono',monospace;font-size:12.5px;color:var(--primary-deep);background:var(--primary-tint);padding:6px 12px;border-radius:20px;white-space:nowrap;}
-
     .tabbar{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap;}
     .tabbar button{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:9px 16px;border-radius:20px;border:1.5px solid var(--border);background:var(--surface);color:var(--ink-soft);cursor:pointer;transition:all .15s;}
     .tabbar button:hover{border-color:var(--primary);color:var(--primary-deep);}
     .tabbar button.active{background:var(--primary-deep);border-color:var(--primary-deep);color:#fff;}
-
     .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px 26px 22px;margin-bottom:18px;}
-
     .role-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;}
     .role-card{border:1.5px solid var(--border);border-radius:var(--radius);padding:20px 18px;cursor:pointer;background:var(--surface);transition:all .15s;text-align:left;}
     .role-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 6px 16px rgba(28,59,51,0.08);}
-    .role-card.selected{border-color:var(--primary-deep);background:var(--primary-tint);}
     .role-card .icon{width:30px;height:30px;margin-bottom:10px;color:var(--primary-deep);}
     .role-card h3{font-family:'Fraunces',serif;font-size:16px;margin:0 0 4px;color:var(--primary-deep);}
     .role-card p{margin:0;font-size:12.5px;color:var(--ink-soft);}
-
     .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
     .field{display:flex;flex-direction:column;gap:6px;}
     .field label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);}
-    .field input[type=text], .field input[type=number], .field input[type=date], .field input[type=time], .field select, .field textarea{
-      font-family:'Inter',sans-serif;font-size:14px;padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;background:#fff;color:var(--ink);width:100%;
-    }
+    .field input[type=text], .field input[type=number], .field input[type=date], .field input[type=time], .field select, .field textarea{font-family:'Inter',sans-serif;font-size:14px;padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;background:#fff;color:var(--ink);width:100%;}
     .field textarea{resize:vertical;min-height:70px;}
     .field input:focus, .field textarea:focus, .field select:focus{outline:2px solid var(--primary);outline-offset:1px;border-color:var(--primary);}
-
     .section-title{font-family:'Fraunces',serif;font-size:17px;color:var(--primary-deep);margin:0 0 14px;display:flex;align-items:center;gap:8px;}
     .section-title .num{font-family:'Space Mono',monospace;font-size:11px;background:var(--accent-tint);color:#8a5f19;padding:2px 7px;border-radius:6px;}
-
-    .checkgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-bottom:12px;}
-    .checkitem{display:flex;align-items:center;gap:8px;font-size:13.5px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:#fff;cursor:pointer;}
-    .checkitem input{accent-color:var(--primary-deep);width:15px;height:15px;}
-    .checkitem.checked{border-color:var(--primary);background:var(--primary-tint);}
-
     table.dyn{width:100%;border-collapse:collapse;margin-bottom:10px;}
     table.dyn th{font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-soft);text-align:left;padding:6px 8px;border-bottom:1.5px solid var(--border);}
     table.dyn td{padding:5px 6px;border-bottom:1px solid var(--border);}
@@ -81,30 +66,24 @@
     .addrow-btn{font-family:'Inter';font-size:12.5px;font-weight:600;color:var(--primary-deep);background:none;border:1.5px dashed var(--primary);padding:6px 12px;border-radius:8px;cursor:pointer;}
     .addrow-btn:hover{background:var(--primary-tint);}
     .rmrow-btn{background:none;border:none;color:var(--alert);cursor:pointer;font-size:15px;padding:2px 6px;}
-
-    .radiogrid{display:flex;gap:10px;margin-bottom:4px;}
+    .radiogrid{display:flex;gap:10px;margin-bottom:4px;flex-wrap:wrap;}
     .radioitem{display:flex;align-items:center;gap:6px;font-size:13.5px;padding:8px 14px;border:1px solid var(--border);border-radius:20px;cursor:pointer;}
     .radioitem.checked{border-color:var(--primary);background:var(--primary-tint);font-weight:600;}
-
     .stars{display:flex;gap:4px;font-size:26px;cursor:pointer;user-select:none;}
     .stars span{color:#DDD3BB;transition:color .1s;}
     .stars span.filled{color:var(--accent);}
-
     .submit-bar{display:flex;justify-content:flex-end;gap:10px;margin-top:8px;}
     .btn-primary{font-family:'Inter';font-weight:700;font-size:14px;background:var(--primary-deep);color:#fff;border:none;padding:12px 24px;border-radius:10px;cursor:pointer;}
     .btn-primary:hover{background:var(--primary);}
     .btn-ghost{font-family:'Inter';font-weight:600;font-size:13.5px;background:none;color:var(--ink-soft);border:1.5px solid var(--border);padding:11px 18px;border-radius:10px;cursor:pointer;}
-
     .confirm{display:flex;gap:14px;align-items:flex-start;background:var(--primary-tint);border:1px solid var(--primary);border-radius:var(--radius);padding:18px 20px;}
     .confirm svg{flex:none;width:26px;height:26px;color:var(--primary-deep);margin-top:2px;}
     .confirm h3{margin:0 0 4px;font-family:'Fraunces',serif;color:var(--primary-deep);}
     .confirm p{margin:0;color:var(--ink-soft);font-size:13.5px;}
-
     .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:18px;}
     .stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;}
     .stat .num{font-family:'Fraunces',serif;font-size:28px;color:var(--primary-deep);}
     .stat .label{font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);}
-
     .report-item{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:10px;background:#fff;cursor:pointer;}
     .report-item:hover{border-color:var(--primary);}
     .report-item .top{display:flex;justify-content:space-between;align-items:center;}
@@ -121,24 +100,18 @@
     .badge.reviewed{background:#E4E9F5;color:#33427A;}
     .badge.approved{background:#DCEEDF;color:#1F6B3F;}
     .badge.followup{background:var(--alert-tint);color:var(--alert);}
-
     .review-block{margin-top:14px;padding-top:12px;border-top:1px dashed var(--border);}
-    .review-block .radiogrid{flex-wrap:wrap;}
-
     .report-detail{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);font-size:13px;}
     .report-detail .kv{margin-bottom:6px;}
     .report-detail .kv b{color:var(--primary-deep);}
-
     .empty{text-align:center;padding:40px 20px;color:var(--ink-soft);}
     .empty svg{width:44px;height:44px;color:var(--border);margin-bottom:10px;}
-
     .login-card{max-width:420px;margin:20px auto;}
     .login-sub{font-size:13px;color:var(--ink-soft);margin:-6px 0 16px;}
     .login-error{font-size:12.5px;color:var(--alert);background:var(--alert-tint);padding:8px 12px;border-radius:8px;margin-top:4px;}
     .session-tag{font-size:12px;color:var(--ink-soft);}
     .session-tag a{color:var(--primary-deep);font-weight:600;text-decoration:none;}
     .session-tag a:hover{text-decoration:underline;}
-
     @media (max-width:600px){
       .field-row{grid-template-columns:1fr;}
       .masthead{flex-direction:column;align-items:flex-start;}
@@ -162,17 +135,14 @@
     <div class="datebadge" id="todayBadge"></div>
   </div>
   <div class="gradient-bar"></div>
-
   <div class="tabbar">
     <button id="tabSubmit" class="active" onclick="switchTab('submit')">Submit a report</button>
     <button id="tabSuper" onclick="switchTab('super')">Supervisor view</button>
   </div>
-
   <div id="submitView"></div>
   <div id="superView" style="display:none;"></div>
   <div id="printArea" style="display:none;"></div>
 </div>
-
 <script>
 const today = new Date();
 document.getElementById('todayBadge').textContent = today.toLocaleDateString('en-GB', { weekday:'short', day:'2-digit', month:'short', year:'numeric' });
@@ -188,116 +158,12 @@ const ICONS = {
 };
 
 const ROLES = {
-  frontdesk: {
-    label: "Front Desk", tagline: "Reception, scheduling & billing",
-    sections: [
-      { title: "Today's activity", fields: [
-        {k:'apptsScheduled', label:'Appointments scheduled', type:'number'},
-        {k:'apptsCheckedIn', label:'Clients checked in', type:'number'},
-        {k:'noShows', label:'No-shows', type:'number'},
-        {k:'rescheduled', label:'Rescheduled', type:'number'},
-        {k:'newRegistrations', label:'New client registrations', type:'number'},
-        {k:'callsMade', label:'Confirmation / reminder calls made', type:'number'},
-        {k:'walkIns', label:'Walk-ins handled', type:'number'},
-      ]},
-      { title: "Payments received", type:'table', k:'payments',
-        columns:[{k:'client',label:'Client'},{k:'amount',label:'Amount'},{k:'method',label:'Method'},{k:'note',label:'Note'}] },
-      { title: "Any challenges today?", type:'textarea', k:'challenges', placeholder:'Explain in your own words — e.g. phone system was down for an hour, a parent complained about wait times...' },
-      { title: "Complaints or issues received", type:'textarea', k:'complaints', placeholder:'e.g. Parent unhappy about wait time; asked to reschedule Thursday session...' },
-      { title: "Handover notes for next shift", type:'textarea', k:'handover' },
-      { title: "Tomorrow's follow-ups", type:'textarea', k:'tomorrow' },
-      { title: "Overall day rating", type:'stars', k:'rating' },
-    ]
-  },
-  clinical: {
-    label: "Clinical / Therapy", tagline: "Therapists & clinicians",
-    sections: [
-      { title: "Clients seen today", type:'table', k:'clients',
-        columns:[{k:'client',label:'Client'},{k:'time',label:'Time'},{k:'therapy',label:'Therapy type'},{k:'outcome',label:'Outcome'}] },
-      { title: "Activities performed today", type:'textarea', k:'activities', placeholder:'e.g. Conducted speech therapy for six children. Prepared sensory integration room. Updated treatment plans...' },
-      { title: "Any challenges today?", type:'textarea', k:'challenges', placeholder:'Explain in your own words — e.g. a client arrived late, equipment failure, parent no-show...' },
-      { title: "Clients who missed appointments", type:'table', k:'missed',
-        columns:[{k:'client',label:'Client'},{k:'reason',label:'Reason'}] },
-      { title: "Unfinished work", fields:[
-        {k:'unfinished', label:'Describe unfinished work', type:'textarea'},
-        {k:'priority', label:'Priority', type:'radio', options:['High','Medium','Low']},
-      ]},
-      { title: "Materials used", type:'textarea', k:'materials' },
-      { title: "Equipment problems", type:'textarea', k:'equipment' },
-      { title: "Parent feedback", type:'textarea', k:'parentFeedback' },
-      { title: "Suggestions", type:'textarea', k:'suggestions' },
-      { title: "Tomorrow's plan", type:'textarea', k:'tomorrow' },
-      { title: "Overall day rating", type:'stars', k:'rating' },
-    ]
-  },
-  iep: {
-    label: "IEP & Education", tagline: "IEP coordinators & special-ed staff",
-    sections: [
-      { title: "IEP goals reviewed today", type:'table', k:'iepGoals',
-        columns:[{k:'student',label:'Student'},{k:'goalArea',label:'Goal area'},{k:'progress',label:'Progress'},{k:'nextStep',label:'Next step'}] },
-      { title: "IEP / review meetings held", fields:[
-        {k:'meetingsCount', label:'Number of meetings held', type:'number'},
-        {k:'meetingsWith', label:'Students / families involved', type:'text'},
-      ]},
-      { title: "Documentation completed today", type:'textarea', k:'docsDone', placeholder:'Explain what you completed — e.g. progress notes, goal updates, quarterly report, PLOP...' },
-      { title: "Upcoming compliance deadlines", type:'table', k:'deadlines',
-        columns:[{k:'student',label:'Student'},{k:'deadline',label:'Deadline'},{k:'status',label:'Status'}] },
-      { title: "Parent / teacher communication log", type:'textarea', k:'commLog' },
-      { title: "Any challenges today?", type:'textarea', k:'challenges', placeholder:'Explain in your own words — e.g. parent unavailable, documentation backlog, assessment pending...' },
-      { title: "Tomorrow's plan", type:'textarea', k:'tomorrow' },
-      { title: "Overall day rating", type:'stars', k:'rating' },
-    ]
-  },
-  support: {
-    label: "Support / Facilities", tagline: "Transport, maintenance & admin support",
-    sections: [
-      { title: "What tasks did you complete today?", type:'textarea', k:'tasks', placeholder:'Explain in your own words — e.g. cleaned therapy rooms, serviced the van, restocked sensory supplies...' },
-      { title: "Transport log (if applicable)", fields:[
-        {k:'route', label:'Route / area covered', type:'text'},
-        {k:'distance', label:'Distance travelled (km)', type:'number'},
-        {k:'fuel', label:'Fuel used', type:'text'},
-      ]},
-      { title: "Equipment / facility issues", type:'table', k:'issues',
-        columns:[{k:'item',label:'Item'},{k:'issue',label:'Issue'},{k:'status',label:'Status'}] },
-      { title: "Inventory running low", type:'textarea', k:'inventoryLow' },
-      { title: "Safety concerns", type:'textarea', k:'safety' },
-      { title: "Tomorrow's plan", type:'textarea', k:'tomorrow' },
-      { title: "Overall day rating", type:'stars', k:'rating' },
-    ]
-  },
-  hod: {
-    label: "HOD", tagline: "Heads of department",
-    sections: [
-      { title: "Department snapshot", fields:[
-        {k:'department', label:'Department', type:'text'},
-        {k:'staffPresent', label:'Staff present today', type:'number'},
-        {k:'staffAbsent', label:'Staff absent today', type:'number'},
-      ]},
-      { title: "Key decisions or actions taken today", type:'textarea', k:'decisions', placeholder:'Explain in your own words — what did you decide or action today, and why?' },
-      { title: "Department issues or escalations", type:'textarea', k:'issues', placeholder:'Explain any issues that need attention above your level...' },
-      { title: "Staff performance notes", type:'textarea', k:'performance', placeholder:'Any staff doing especially well, or needing support?' },
-      { title: "Resource or budget needs", type:'textarea', k:'resources' },
-      { title: "Tomorrow's plan", type:'textarea', k:'tomorrow' },
-      { title: "Overall day rating", type:'stars', k:'rating' },
-    ]
-  },
-  finance: {
-    label: "Finance & Insurance", tagline: "Billing, payments & claims",
-    sections: [
-      { title: "Financial summary", fields:[
-        {k:'totalCollected', label:'Total collected today', type:'number'},
-        {k:'invoicesSent', label:'Invoices sent', type:'number'},
-        {k:'outstanding', label:'Outstanding balance', type:'number'},
-        {k:'pettyCash', label:'Petty cash balance', type:'number'},
-      ]},
-      { title: "Insurance claims", type:'table', k:'claims',
-        columns:[{k:'client',label:'Client'},{k:'insurer',label:'Insurer'},{k:'amount',label:'Claim amount'},{k:'status',label:'Status'}] },
-      { title: "Pending reimbursements", type:'textarea', k:'reimbursements' },
-      { title: "Any issues or discrepancies today?", type:'textarea', k:'issues', placeholder:'Explain in your own words — e.g. a claim was rejected, an invoice dispute, a reconciliation mismatch...' },
-      { title: "Tomorrow's plan", type:'textarea', k:'tomorrow' },
-      { title: "Overall day rating", type:'stars', k:'rating' },
-    ]
-  }
+  frontdesk: {label: "Front Desk", tagline: "Reception, scheduling & billing", sections: [{title: "Today's activity", fields: [{k:'apptsScheduled', label:'Appointments scheduled', type:'number'},{k:'apptsCheckedIn', label:'Clients checked in', type:'number'},{k:'noShows', label:'No-shows', type:'number'},{k:'rescheduled', label:'Rescheduled', type:'number'},{k:'newRegistrations', label:'New client registrations', type:'number'},{k:'callsMade', label:'Confirmation/reminder calls made', type:'number'},{k:'walkIns', label:'Walk-ins handled', type:'number'}]},{title: "Payments received", type:'table', k:'payments', columns:[{k:'client',label:'Client'},{k:'amount',label:'Amount'},{k:'method',label:'Method'},{k:'note',label:'Note'}]},{title: "Any challenges today?", type:'textarea', k:'challenges', placeholder:'Phone system down, parent complaints...'},{title: "Complaints or issues received", type:'textarea', k:'complaints', placeholder:'Parent unhappy, reschedule requests...'},{title: "Handover notes for next shift", type:'textarea', k:'handover'},{title: "Tomorrow's follow-ups", type:'textarea', k:'tomorrow'},{title: "Overall day rating", type:'stars', k:'rating'}]},
+  clinical: {label: "Clinical / Therapy", tagline: "Therapists & clinicians", sections: [{title: "Clients seen today", type:'table', k:'clients', columns:[{k:'client',label:'Client'},{k:'time',label:'Time'},{k:'therapy',label:'Therapy type'},{k:'outcome',label:'Outcome'}]},{title: "Activities performed today", type:'textarea', k:'activities', placeholder:'Speech therapy sessions, prep work...'},{title: "Any challenges today?", type:'textarea', k:'challenges', placeholder:'Late arrivals, equipment issues...'},{title: "Clients who missed appointments", type:'table', k:'missed', columns:[{k:'client',label:'Client'},{k:'reason',label:'Reason'}]},{title: "Unfinished work", fields:[{k:'unfinished', label:'Describe unfinished work', type:'textarea'},{k:'priority', label:'Priority', type:'radio', options:['High','Medium','Low']}]},{title: "Materials used", type:'textarea', k:'materials'},{title: "Equipment problems", type:'textarea', k:'equipment'},{title: "Parent feedback", type:'textarea', k:'parentFeedback'},{title: "Suggestions", type:'textarea', k:'suggestions'},{title: "Tomorrow's plan", type:'textarea', k:'tomorrow'},{title: "Overall day rating", type:'stars', k:'rating'}]},
+  iep: {label: "IEP & Education", tagline: "IEP coordinators & special-ed staff", sections: [{title: "IEP goals reviewed today", type:'table', k:'iepGoals', columns:[{k:'student',label:'Student'},{k:'goalArea',label:'Goal area'},{k:'progress',label:'Progress'},{k:'nextStep',label:'Next step'}]},{title: "IEP/review meetings held", fields:[{k:'meetingsCount', label:'Number of meetings', type:'number'},{k:'meetingsWith', label:'Students/families involved', type:'text'}]},{title: "Documentation completed today", type:'textarea', k:'docsDone', placeholder:'Progress notes, goal updates, reports...'},{title: "Upcoming compliance deadlines", type:'table', k:'deadlines', columns:[{k:'student',label:'Student'},{k:'deadline',label:'Deadline'},{k:'status',label:'Status'}]},{title: "Parent/teacher communication log", type:'textarea', k:'commLog'},{title: "Any challenges today?", type:'textarea', k:'challenges', placeholder:'Parent unavailable, backlog issues...'},{title: "Tomorrow's plan", type:'textarea', k:'tomorrow'},{title: "Overall day rating", type:'stars', k:'rating'}]},
+  support: {label: "Support / Facilities", tagline: "Transport, maintenance & admin support", sections: [{title: "What tasks did you complete today?", type:'textarea', k:'tasks', placeholder:'Cleaning, maintenance, supplies...'},{title: "Transport log (if applicable)", fields:[{k:'route', label:'Route/area covered', type:'text'},{k:'distance', label:'Distance travelled (km)', type:'number'},{k:'fuel', label:'Fuel used', type:'text'}]},{title: "Equipment/facility issues", type:'table', k:'issues', columns:[{k:'item',label:'Item'},{k:'issue',label:'Issue'},{k:'status',label:'Status'}]},{title: "Inventory running low", type:'textarea', k:'inventoryLow'},{title: "Safety concerns", type:'textarea', k:'safety'},{title: "Tomorrow's plan", type:'textarea', k:'tomorrow'},{title: "Overall day rating", type:'stars', k:'rating'}]},
+  hod: {label: "HOD", tagline: "Heads of department", sections: [{title: "Department snapshot", fields:[{k:'department', label:'Department', type:'text'},{k:'staffPresent', label:'Staff present today', type:'number'},{k:'staffAbsent', label:'Staff absent today', type:'number'}]},{title: "Key decisions or actions taken today", type:'textarea', k:'decisions', placeholder:'What decisions did you make today and why?'},{title: "Department issues or escalations", type:'textarea', k:'issues', placeholder:'Issues needing attention above your level...'},{title: "Staff performance notes", type:'textarea', k:'performance', placeholder:'Staff doing well or needing support...'},{title: "Resource or budget needs", type:'textarea', k:'resources'},{title: "Tomorrow's plan", type:'textarea', k:'tomorrow'},{title: "Overall day rating", type:'stars', k:'rating'}]},
+  finance: {label: "Finance & Insurance", tagline: "Billing, payments & claims", sections: [{title: "Financial summary", fields:[{k:'totalCollected', label:'Total collected today', type:'number'},{k:'invoicesSent', label:'Invoices sent', type:'number'},{k:'outstanding', label:'Outstanding balance', type:'number'},{k:'pettyCash', label:'Petty cash balance', type:'number'}]},{title: "Insurance claims", type:'table', k:'claims', columns:[{k:'client',label:'Client'},{k:'insurer',label:'Insurer'},{k:'amount',label:'Claim amount'},{k:'status',label:'Status'}]},{title: "Pending reimbursements", type:'textarea', k:'reimbursements'},{title: "Any issues or discrepancies today?", type:'textarea', k:'issues', placeholder:'Claims rejected, invoice disputes...'},{title: "Tomorrow's plan", type:'textarea', k:'tomorrow'},{title: "Overall day rating", type:'stars', k:'rating'}]}
 };
 
 const ROLE_COLORS = { frontdesk:'#33427A', clinical:'#2E5C50', iep:'#8a5f19', support:'#6E3D6C', hod:'#4B3B8C', finance:'#1F6B3F' };
@@ -310,12 +176,7 @@ const STAFF_DIRECTORY = [
 ];
 const SUPERVISOR_PASSWORD = 'admin2026';
 
-let staffSession = null;
-let supervisorSession = false;
-let reports = [];
-let currentRole = null;
-let formState = {};
-let rowCounters = {};
+let staffSession = null, supervisorSession = false, reports = [], currentRole = null, formState = {}, rowCounters = {};
 
 function switchTab(t){
   document.getElementById('tabSubmit').classList.toggle('active', t==='submit');
@@ -328,24 +189,9 @@ function switchTab(t){
 
 function renderStaffLogin(){
   const options = STAFF_DIRECTORY.map(s=>`<option value="${escapeHtml(s.name)}">${escapeHtml(s.name)}</option>`).join('');
-  document.getElementById('submitView').innerHTML = `
-    <div class="card login-card">
-      <div class="section-title">Staff login</div>
-      <p class="login-sub">Select your name and enter your 4-digit PIN to submit today's report.</p>
-      <div class="field" style="margin-bottom:12px;">
-        <label>Your name</label>
-        <select id="login_name">${options}</select>
-      </div>
-      <div class="field" style="margin-bottom:6px;">
-        <label>PIN</label>
-        <input type="password" id="login_pin" maxlength="4" inputmode="numeric" placeholder="••••" onkeydown="if(event.key==='Enter') staffLogin()">
-      </div>
-      <div id="login_error" class="login-error" style="display:none;">That name and PIN don't match. Please try again or check with your admin.</div>
-      <div class="submit-bar" style="margin-top:16px;">
-        <button class="btn-primary" onclick="staffLogin()">Log in</button>
-      </div>
-    </div>`;
+  document.getElementById('submitView').innerHTML = `<div class="card login-card"><div class="section-title">Staff login</div><p class="login-sub">Select your name and enter your 4-digit PIN to submit today's report.</p><div class="field" style="margin-bottom:12px;"><label>Your name</label><select id="login_name">${options}</select></div><div class="field" style="margin-bottom:6px;"><label>PIN</label><input type="password" id="login_pin" maxlength="4" inputmode="numeric" placeholder="••••" onkeydown="if(event.key==='Enter') staffLogin()"></div><div id="login_error" class="login-error" style="display:none;">That name and PIN don't match. Please try again.</div><div class="submit-bar" style="margin-top:16px;"><button class="btn-primary" onclick="staffLogin()">Log in</button></div></div>`;
 }
+
 function staffLogin(){
   const name = document.getElementById('login_name').value;
   const pin = document.getElementById('login_pin').value.trim();
@@ -355,115 +201,50 @@ function staffLogin(){
   currentRole = null;
   renderSubmit();
 }
-function logoutStaff(){
-  staffSession = null;
-  currentRole = null;
-  renderStaffLogin();
-}
+
+function logoutStaff(){ staffSession = null; currentRole = null; renderStaffLogin(); }
 
 function renderSupervisorLogin(){
-  document.getElementById('superView').innerHTML = `
-    <div class="card login-card">
-      <div class="section-title">Supervisor login</div>
-      <p class="login-sub">Enter the supervisor password to review today's reports.</p>
-      <div class="field" style="margin-bottom:6px;">
-        <label>Password</label>
-        <input type="password" id="login_super_pw" placeholder="••••••••" onkeydown="if(event.key==='Enter') supervisorLogin()">
-      </div>
-      <div id="super_login_error" class="login-error" style="display:none;">Incorrect password.</div>
-      <div class="submit-bar" style="margin-top:16px;">
-        <button class="btn-primary" onclick="supervisorLogin()">Log in</button>
-      </div>
-    </div>`;
+  document.getElementById('superView').innerHTML = `<div class="card login-card"><div class="section-title">Supervisor login</div><p class="login-sub">Enter the supervisor password to review today's reports.</p><div class="field" style="margin-bottom:6px;"><label>Password</label><input type="password" id="login_super_pw" placeholder="••••••••" onkeydown="if(event.key==='Enter') supervisorLogin()"></div><div id="super_login_error" class="login-error" style="display:none;">Incorrect password.</div><div class="submit-bar" style="margin-top:16px;"><button class="btn-primary" onclick="supervisorLogin()">Log in</button></div></div>`;
 }
+
 function supervisorLogin(){
   const pw = document.getElementById('login_super_pw').value;
   if(pw !== SUPERVISOR_PASSWORD){ document.getElementById('super_login_error').style.display='block'; return; }
   supervisorSession = true;
   renderSuper();
 }
-function logoutSupervisor(){
-  supervisorSession = false;
-  renderSupervisorLogin();
-}
 
-function resetForm(){
-  formState = { meta:{}, };
-  rowCounters = {};
-}
+function logoutSupervisor(){ supervisorSession = false; renderSupervisorLogin(); }
 
-function selectRole(roleKey){
-  currentRole = roleKey;
-  resetForm();
-  renderSubmit();
-}
+function resetForm(){ formState = { meta:{}, }; rowCounters = {}; }
+
+function selectRole(roleKey){ currentRole = roleKey; resetForm(); renderSubmit(); }
 
 function renderSubmit(){
   const el = document.getElementById('submitView');
   if(!currentRole){
-    let cards = Object.entries(ROLES).map(([key,r])=>`
-      <button class="role-card" style="border-left:4px solid ${ROLE_COLORS[key]};" onclick="selectRole('${key}')">
-        <div class="icon" style="color:${ROLE_COLORS[key]};">${ICONS[key]}</div>
-        <h3>${r.label}</h3>
-        <p>${r.tagline}</p>
-      </button>`).join('');
-    el.innerHTML = `
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-          <div class="section-title" style="margin:0;"><span class="num">Step 1</span> Who's reporting today?</div>
-          <span class="session-tag">Logged in as ${escapeHtml(staffSession.name)} · <a href="javascript:void(0)" onclick="logoutStaff()">Log out</a></span>
-        </div>
-        <div class="role-grid">${cards}</div>
-      </div>`;
+    let cards = Object.entries(ROLES).map(([key,r])=>`<button class="role-card" style="border-left:4px solid ${ROLE_COLORS[key]};" onclick="selectRole('${key}')"><div class="icon" style="color:${ROLE_COLORS[key]};">${ICONS[key]}</div><h3>${r.label}</h3><p>${r.tagline}</p></button>`).join('');
+    el.innerHTML = `<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;"><div class="section-title" style="margin:0;"><span class="num">Step 1</span> Who's reporting today?</div><span class="session-tag">Logged in as ${escapeHtml(staffSession.name)} · <a href="javascript:void(0)" onclick="logoutStaff()">Log out</a></span></div><div class="role-grid">${cards}</div></div>`;
     return;
   }
 
   const role = ROLES[currentRole];
-  let html = `<div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
-      <div class="section-title" style="margin:0;"><span class="num">${role.label}</span> Daily report</div>
-      <button class="btn-ghost" onclick="currentRole=null; renderSubmit();">← Change role</button>
-    </div>
-    <div class="field-row">
-      <div class="field"><label>Staff name</label><input type="text" id="m_name" value="${escapeHtml(staffSession.name)}" disabled></div>
-      <div class="field"><label>Location</label><input type="text" id="m_location" value="${escapeHtml(staffSession.location||'')}" disabled></div>
-    </div>
-    <div class="field-row">
-      <div class="field"><label>Date</label><input type="date" id="m_date" value="${todayISO}" disabled></div>
-      <div class="field"><label>Position</label><input type="text" id="m_position" value="${escapeHtml(staffSession.position||'')}" disabled></div>
-    </div>
-    <div class="field-row">
-      <div class="field"><label>Time started</label><input type="time" id="m_start"></div>
-      <div class="field"><label>Time finished</label><input type="time" id="m_finish"></div>
-    </div>
-    <p class="login-sub" style="margin-top:10px;margin-bottom:0;">Name, location, date and position are filled in from your login. Ask your admin if any of these need updating.</p>
-  </div>`;
+  let html = `<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;"><div class="section-title" style="margin:0;"><span class="num">${role.label}</span> Daily report</div><button class="btn-ghost" onclick="currentRole=null; renderSubmit();">← Change role</button></div><div class="field-row"><div class="field"><label>Staff name</label><input type="text" id="m_name" value="${escapeHtml(staffSession.name)}" disabled></div><div class="field"><label>Location</label><input type="text" id="m_location" value="${escapeHtml(staffSession.location||'')}" disabled></div></div><div class="field-row"><div class="field"><label>Date</label><input type="date" id="m_date" value="${todayISO}" disabled></div><div class="field"><label>Position</label><input type="text" id="m_position" value="${escapeHtml(staffSession.position||'')}" disabled></div></div><div class="field-row"><div class="field"><label>Time started</label><input type="time" id="m_start"></div><div class="field"><label>Time finished</label><input type="time" id="m_finish"></div></div><p class="login-sub" style="margin-top:10px;margin-bottom:0;">Name, location, date and position are filled from your login.</p></div>`;
 
   role.sections.forEach((sec, si) => {
     html += `<div class="card"><div class="section-title"><span class="num">${String(si+2).padStart(2,'0')}</span> ${sec.title}</div>`;
-    if(sec.type === 'table'){
-      html += renderTable(sec);
-    } else if(sec.type === 'checkgroup'){
-      html += renderCheckgroup(sec);
-    } else if(sec.type === 'textarea'){
-      html += `<div class="field"><textarea id="f_${sec.k}" placeholder="${sec.placeholder||''}"></textarea></div>`;
-    } else if(sec.type === 'stars'){
-      html += renderStars(sec);
-    } else if(sec.fields){
-      html += `<div class="field-row">` + sec.fields.map(f=>renderField(f)).join('') + `</div>`;
-    }
+    if(sec.type === 'table') html += renderTable(sec);
+    else if(sec.type === 'textarea') html += `<div class="field"><textarea id="f_${sec.k}" placeholder="${sec.placeholder||''}"></textarea></div>`;
+    else if(sec.type === 'stars') html += renderStars(sec);
+    else if(sec.fields) html += `<div class="field-row">` + sec.fields.map(f=>renderField(f)).join('') + `</div>`;
     html += `</div>`;
   });
 
-  html += `<div class="submit-bar">
-    <button class="btn-ghost" onclick="currentRole=null; renderSubmit();">Cancel</button>
-    <button class="btn-primary" onclick="submitReport()">Submit daily report</button>
-  </div>`;
-
+  html += `<div class="submit-bar"><button class="btn-ghost" onclick="currentRole=null; renderSubmit();">Cancel</button><button class="btn-primary" onclick="submitReport()">Submit daily report</button></div>`;
   el.innerHTML = html;
 
   role.sections.forEach(sec=>{
-    if(sec.type==='checkgroup') wireCheckgroup(sec);
     if(sec.fields) sec.fields.forEach(f=>{ if(f.type==='radio') wireRadio(sec, f); });
     if(sec.type==='stars') wireStars(sec);
     if(sec.type==='table') wireTable(sec);
@@ -472,12 +253,7 @@ function renderSubmit(){
 
 function renderField(f){
   if(f.type==='radio'){
-    return `<div class="field" style="grid-column: span 2;">
-      <label>${f.label}</label>
-      <div class="radiogrid" id="radio_${f.k}">
-        ${f.options.map(o=>`<div class="radioitem" data-val="${o}">${o}</div>`).join('')}
-      </div>
-    </div>`;
+    return `<div class="field" style="grid-column: span 2;"><label>${f.label}</label><div class="radiogrid" id="radio_${f.k}">${f.options.map(o=>`<div class="radioitem" data-val="${o}">${o}</div>`).join('')}</div></div>`;
   }
   const type = f.type==='number' ? 'number' : 'text';
   return `<div class="field"><label>${f.label}</label><input type="${type}" id="f_${f.k}"></div>`;
@@ -486,62 +262,26 @@ function renderField(f){
 function wireRadio(sec, f){
   const wrap = document.getElementById('radio_'+f.k);
   if(!wrap) return;
-  wrap.querySelectorAll('.radioitem').forEach(item=>{
-    item.onclick = ()=>{
-      wrap.querySelectorAll('.radioitem').forEach(i=>i.classList.remove('checked'));
-      item.classList.add('checked');
-      wrap.dataset.value = item.dataset.val;
-    };
-  });
+  wrap.querySelectorAll('.radioitem').forEach(item=>{ item.onclick = ()=>{ wrap.querySelectorAll('.radioitem').forEach(i=>i.classList.remove('checked')); item.classList.add('checked'); wrap.dataset.value = item.dataset.val; }; });
 }
 
-function renderCheckgroup(sec){
-  return `<div class="checkgrid" id="check_${sec.k}">
-    ${sec.options.map(o=>`<label class="checkitem" data-val="${o}"><input type="checkbox"> ${o}</label>`).join('')}
-  </div>
-  ${sec.options.includes('Other') ? `<div class="field"><label>If "Other", describe</label><input type="text" id="f_${sec.k}_other"></div>` : ''}`;
-}
-function wireCheckgroup(sec){
-  const wrap = document.getElementById('check_'+sec.k);
-  wrap.querySelectorAll('.checkitem').forEach(item=>{
-    item.addEventListener('click', (e)=>{
-      if(e.target.tagName!=='INPUT'){ item.querySelector('input').checked = !item.querySelector('input').checked; }
-      item.classList.toggle('checked', item.querySelector('input').checked);
-    });
-  });
-}
+function renderStars(sec){ return `<div class="stars" id="stars_${sec.k}">${[1,2,3,4,5].map(n=>`<span data-n="${n}">★</span>`).join('')}</div>`; }
 
-function renderStars(sec){
-  return `<div class="stars" id="stars_${sec.k}">
-    ${[1,2,3,4,5].map(n=>`<span data-n="${n}">★</span>`).join('')}
-  </div>`;
-}
 function wireStars(sec){
   const wrap = document.getElementById('stars_'+sec.k);
-  wrap.querySelectorAll('span').forEach(s=>{
-    s.onclick = ()=>{
-      const n = +s.dataset.n;
-      wrap.dataset.value = n;
-      wrap.querySelectorAll('span').forEach(x=> x.classList.toggle('filled', +x.dataset.n <= n));
-    };
-  });
+  wrap.querySelectorAll('span').forEach(s=>{ s.onclick = ()=>{ const n = +s.dataset.n; wrap.dataset.value = n; wrap.querySelectorAll('span').forEach(x=> x.classList.toggle('filled', +x.dataset.n <= n)); }; });
 }
 
 function renderTable(sec){
   rowCounters[sec.k] = rowCounters[sec.k] || 1;
   const rows = Array.from({length: rowCounters[sec.k]}).map((_,ri)=>rowHTML(sec, ri)).join('');
-  return `<table class="dyn" id="table_${sec.k}">
-    <thead><tr>${sec.columns.map(c=>`<th>${c.label}</th>`).join('')}<th></th></tr></thead>
-    <tbody>${rows}</tbody>
-  </table>
-  <button type="button" class="addrow-btn" onclick="addRow('${sec.k}')">+ Add row</button>`;
+  return `<table class="dyn" id="table_${sec.k}"><thead><tr>${sec.columns.map(c=>`<th>${c.label}</th>`).join('')}<th></th></tr></thead><tbody>${rows}</tbody></table><button type="button" class="addrow-btn" onclick="addRow('${sec.k}')">+ Add row</button>`;
 }
+
 function rowHTML(sec, ri){
-  return `<tr data-row="${ri}">
-    ${sec.columns.map(c=>`<td><input type="text" data-col="${c.k}"></td>`).join('')}
-    <td><button type="button" class="rmrow-btn" onclick="this.closest('tr').remove()">✕</button></td>
-  </tr>`;
+  return `<tr data-row="${ri}">${sec.columns.map(c=>`<td><input type="text" data-col="${c.k}"></td>`).join('')}<td><button type="button" class="rmrow-btn" onclick="this.closest('tr').remove()">✕</button></td></tr>`;
 }
+
 function addRow(secKey){
   const sec = findSection(secKey);
   const tbody = document.querySelector('#table_'+secKey+' tbody');
@@ -550,7 +290,9 @@ function addRow(secKey){
   div.innerHTML = rowHTML(sec, rowCounters[secKey]);
   tbody.appendChild(div.content.firstElementChild);
 }
+
 function wireTable(sec){ }
+
 function findSection(k){
   for(const role of Object.values(ROLES)){
     for(const sec of role.sections){ if(sec.k===k) return sec; }
@@ -575,109 +317,61 @@ function collectTable(sec){
 
 function submitReport(){
   const role = ROLES[currentRole];
-  const meta = {
-    name: val('m_name'), location: val('m_location'), date: val('m_date'),
-    position: val('m_position'), start: val('m_start'), finish: val('m_finish')
-  };
+  const meta = { name: val('m_name'), location: val('m_location'), date: val('m_date'), position: val('m_position'), start: val('m_start'), finish: val('m_finish') };
   if(!meta.name){ alert('Please enter the staff name before submitting.'); return; }
 
   const data = {};
   let flagged = false;
   role.sections.forEach(sec=>{
-    if(sec.type==='table'){
-      data[sec.k] = collectTable(sec);
-    } else if(sec.type==='checkgroup'){
-      const wrap = document.getElementById('check_'+sec.k);
-      const chosen = Array.from(wrap.querySelectorAll('.checkitem input:checked')).map(i=>i.closest('.checkitem').dataset.val);
-      data[sec.k] = chosen;
-      if(chosen.length>2) flagged = true;
-    } else if(sec.type==='textarea'){
-      data[sec.k] = val('f_'+sec.k);
-    } else if(sec.type==='stars'){
-      data[sec.k] = document.getElementById('stars_'+sec.k).dataset.value || '';
-    } else if(sec.fields){
+    if(sec.type==='table') data[sec.k] = collectTable(sec);
+    else if(sec.type==='textarea') data[sec.k] = val('f_'+sec.k);
+    else if(sec.type==='stars') data[sec.k] = document.getElementById('stars_'+sec.k).dataset.value || '';
+    else if(sec.fields){
       sec.fields.forEach(f=>{
         if(f.type==='radio'){
           const wrap = document.getElementById('radio_'+f.k);
           data[f.k] = wrap.dataset.value || '';
           if(f.k==='priority' && data[f.k]==='High') flagged = true;
-        } else {
-          data[f.k] = val('f_'+f.k);
-        }
+        } else data[f.k] = val('f_'+f.k);
       });
     }
   });
 
-  reports.push({
-    id: Date.now(), role: currentRole, roleLabel: role.label, meta, data, flagged,
-    submittedAt: new Date(), review: { status:'', comments:'' }
-  });
+  reports.push({ id: Date.now(), role: currentRole, roleLabel: role.label, meta, data, flagged, submittedAt: new Date(), review: { status:'', comments:'' } });
 
   currentRole = null;
-  document.getElementById('submitView').innerHTML = `
-    <div class="confirm">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-      <div>
-        <h3>Report submitted</h3>
-        <p>Thanks, ${meta.name.split(' ')[0]||'there'} — your ${role.label.toLowerCase()} report for ${meta.date} has been recorded. Supervisors can see it under Supervisor view.</p>
-      </div>
-    </div>
-    <div style="margin-top:16px;"><button class="btn-primary" onclick="renderSubmit()">Submit another report</button></div>
-  `;
+  document.getElementById('submitView').innerHTML = `<div class="confirm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><div><h3>Report submitted</h3><p>Thanks, ${meta.name.split(' ')[0]||'there'} — your ${role.label.toLowerCase()} report for ${meta.date} has been recorded. Supervisors can see it under Supervisor view.</p></div></div><div style="margin-top:16px;"><button class="btn-primary" onclick="renderSubmit()">Submit another report</button></div>`;
 }
+
 function val(id){ const e = document.getElementById(id); return e ? e.value.trim() : ''; }
 
 let expanded = {};
+
 function renderSuper(){
   const el = document.getElementById('superView');
-  const todays = reports.filter(r=>r.meta.date===todayISO || true);
+  const todays = reports;
   const counts = {frontdesk:0, clinical:0, iep:0, support:0, hod:0, finance:0};
   todays.forEach(r=> counts[r.role]++);
   const flaggedCount = todays.filter(r=>r.flagged).length;
 
-  let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-    <button class="btn-primary" onclick="exportAllToExcel()">⬇ Download all data (Excel)</button>
-    <span class="session-tag">Supervisor session · <a href="javascript:void(0)" onclick="logoutSupervisor()">Log out</a></span>
-  </div>
-  <div class="stat-row">
-    <div class="stat"><div class="num">${todays.length}</div><div class="label">Reports submitted</div></div>
-    <div class="stat"><div class="num">${counts.frontdesk}</div><div class="label">Front desk</div></div>
-    <div class="stat"><div class="num">${counts.clinical}</div><div class="label">Clinical</div></div>
-    <div class="stat"><div class="num">${counts.iep}</div><div class="label">IEP & education</div></div>
-    <div class="stat"><div class="num">${counts.support}</div><div class="label">Support</div></div>
-    <div class="stat"><div class="num">${counts.hod}</div><div class="label">HOD</div></div>
-    <div class="stat"><div class="num">${counts.finance}</div><div class="label">Finance</div></div>
-    <div class="stat"><div class="num" style="color:var(--alert)">${flaggedCount}</div><div class="label">Needs attention</div></div>
-  </div>`;
+  let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;"><button class="btn-primary" onclick="exportAllToExcel()">⬇ Download all data (Excel)</button><span class="session-tag">Supervisor session · <a href="javascript:void(0)" onclick="logoutSupervisor()">Log out</a></span></div><div class="stat-row"><div class="stat"><div class="num">${todays.length}</div><div class="label">Reports submitted</div></div><div class="stat"><div class="num">${counts.frontdesk}</div><div class="label">Front desk</div></div><div class="stat"><div class="num">${counts.clinical}</div><div class="label">Clinical</div></div><div class="stat"><div class="num">${counts.iep}</div><div class="label">IEP & education</div></div><div class="stat"><div class="num">${counts.support}</div><div class="label">Support</div></div><div class="stat"><div class="num">${counts.hod}</div><div class="label">HOD</div></div><div class="stat"><div class="num">${counts.finance}</div><div class="label">Finance</div></div><div class="stat"><div class="num" style="color:var(--alert)">${flaggedCount}</div><div class="label">Needs attention</div></div></div>`;
 
   if(todays.length===0){
-    html += `<div class="card empty">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
-      <div>No reports submitted yet today. Once staff submit their daily reports, they'll appear here.</div>
-    </div>`;
+    html += `<div class="card empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><div>No reports submitted yet. Once staff submit their daily reports, they'll appear here.</div></div>`;
   } else {
     html += `<div class="card"><div class="section-title">Submitted reports</div>`;
     todays.slice().reverse().forEach(r=>{
       const isOpen = expanded[r.id];
       const reviewBadgeClass = r.review.status==='Approved' ? 'approved' : r.review.status==='Needs Follow-up' ? 'followup' : r.review.status==='Reviewed' ? 'reviewed' : '';
-      html += `<div class="report-item" onclick="toggleExpand(${r.id})">
-        <div class="top">
-          <div>
-            <span class="name">${escapeHtml(r.meta.name||'Unnamed')}</span>
-            <span class="badge ${r.role}" style="margin-left:8px;">${r.roleLabel}</span>
-            ${r.flagged ? `<span class="badge flag" style="margin-left:6px;">Flag</span>` : ''}
-            ${r.review.status ? `<span class="badge ${reviewBadgeClass}" style="margin-left:6px;">${r.review.status}</span>` : ''}
-          </div>
-          <div class="meta">${r.meta.location||''} · ${r.meta.date||''}</div>
-        </div>
-        ${isOpen ? renderDetail(r) : ''}
-      </div>`;
+      html += `<div class="report-item" onclick="toggleExpand(${r.id})"><div class="top"><div><span class="name">${escapeHtml(r.meta.name||'Unnamed')}</span><span class="badge ${r.role}" style="margin-left:8px;">${r.roleLabel}</span>${r.flagged ? `<span class="badge flag" style="margin-left:6px;">Flag</span>` : ''}${r.review.status ? `<span class="badge ${reviewBadgeClass}" style="margin-left:6px;">${r.review.status}</span>` : ''}</div><div class="meta">${r.meta.location||''} · ${r.meta.date||''}</div></div>${isOpen ? renderDetail(r) : ''}</div>`;
     });
     html += `</div>`;
   }
   el.innerHTML = html;
 }
+
 function toggleExpand(id){ expanded[id] = !expanded[id]; renderSuper(); }
+
 function renderDetail(r){
   const role = ROLES[r.role];
   let rows = [];
@@ -685,70 +379,39 @@ function renderDetail(r){
   rows.push(`<div class="kv"><b>Hours:</b> ${r.meta.start||'—'} – ${r.meta.finish||'—'}</div>`);
   role.sections.forEach(sec=>{
     const v = r.data[sec.k];
-    if(sec.type==='table'){
-      if(v && v.length){
-        rows.push(`<div class="kv"><b>${sec.title}:</b> ${v.map(row=>Object.values(row).filter(Boolean).join(' – ')).join('; ')}</div>`);
-      }
-    } else if(sec.type==='checkgroup'){
-      if(v && v.length) rows.push(`<div class="kv"><b>${sec.title}:</b> ${v.join(', ')}</div>`);
-    } else if(sec.type==='stars'){
-      if(v) rows.push(`<div class="kv"><b>${sec.title}:</b> ${'★'.repeat(+v)}${'☆'.repeat(5-v)}</div>`);
-    } else if(sec.type==='textarea'){
-      if(v) rows.push(`<div class="kv"><b>${sec.title}:</b> ${escapeHtml(v)}</div>`);
-    } else if(sec.fields){
-      sec.fields.forEach(f=>{
-        if(r.data[f.k]) rows.push(`<div class="kv"><b>${f.label}:</b> ${escapeHtml(String(r.data[f.k]))}</div>`);
-      });
-    }
+    if(sec.type==='table' && v && v.length) rows.push(`<div class="kv"><b>${sec.title}:</b> ${v.map(row=>Object.values(row).filter(Boolean).join(' – ')).join('; ')}</div>`);
+    else if(sec.type==='stars' && v) rows.push(`<div class="kv"><b>${sec.title}:</b> ${'★'.repeat(+v)}${'☆'.repeat(5-v)}</div>`);
+    else if(sec.type==='textarea' && v) rows.push(`<div class="kv"><b>${sec.title}:</b> ${escapeHtml(v)}</div>`);
+    else if(sec.fields) sec.fields.forEach(f=>{ if(r.data[f.k]) rows.push(`<div class="kv"><b>${f.label}:</b> ${escapeHtml(String(r.data[f.k]))}</div>`); });
   });
-  return `<div class="report-detail" onclick="event.stopPropagation()">
-    ${rows.join('')}
-    <div style="display:flex;gap:8px;margin:12px 0 4px;">
-      <button class="btn-ghost" onclick="downloadReportPDF(${r.id})">⬇ Download PDF</button>
-      <button class="btn-ghost" onclick="downloadReportWord(${r.id})">⬇ Download Word</button>
-    </div>
-    ${renderReviewBlock(r)}
-  </div>`;
+  return `<div class="report-detail" onclick="event.stopPropagation()">${rows.join('')}<div style="display:flex;gap:8px;margin:12px 0 4px;"><button class="btn-ghost" onclick="downloadReportPDF(${r.id})">⬇ Download PDF</button><button class="btn-ghost" onclick="downloadReportWord(${r.id})">⬇ Download Word</button></div>${renderReviewBlock(r)}</div>`;
 }
 
 function renderReviewBlock(r){
   const statuses = ['Reviewed','Approved','Needs Follow-up'];
-  return `<div class="review-block">
-    <div class="section-title" style="font-size:14px;margin-bottom:8px;">Admin review</div>
-    <div class="radiogrid" id="review_status_${r.id}">
-      ${statuses.map(s=>`<div class="radioitem ${r.review.status===s?'checked':''}" data-val="${s}" onclick="setReviewStatus(${r.id}, this)">${s}</div>`).join('')}
-    </div>
-    <div class="field" style="margin-top:10px;"><label>Comments for the staff member</label><textarea id="review_comment_${r.id}" placeholder="e.g. Great detail today — please follow up on Kevin's assessment by Friday.">${escapeHtml(r.review.comments||'')}</textarea></div>
-    <div style="display:flex;justify-content:flex-end;margin-top:8px;"><button class="btn-primary" onclick="saveReview(${r.id})">Save review</button></div>
-  </div>`;
+  return `<div class="review-block"><div class="section-title" style="font-size:14px;margin-bottom:8px;">Admin review</div><div class="radiogrid" id="review_status_${r.id}">${statuses.map(s=>`<div class="radioitem ${r.review.status===s?'checked':''}" data-val="${s}" onclick="setReviewStatus(${r.id}, this)">${s}</div>`).join('')}</div><div class="field" style="margin-top:10px;"><label>Comments for the staff member</label><textarea id="review_comment_${r.id}" placeholder="e.g. Great work today.">${escapeHtml(r.review.comments||'')}</textarea></div><div style="display:flex;justify-content:flex-end;margin-top:8px;"><button class="btn-primary" onclick="saveReview(${r.id})">Save review</button></div></div>`;
 }
+
 function setReviewStatus(id, el){
   const report = reports.find(r=>r.id===id);
   report.review.status = el.dataset.val;
   el.parentElement.querySelectorAll('.radioitem').forEach(i=>i.classList.remove('checked'));
   el.classList.add('checked');
 }
+
 function saveReview(id){
   const report = reports.find(r=>r.id===id);
   report.review.comments = document.getElementById('review_comment_'+id).value.trim();
   renderSuper();
 }
+
 function escapeHtml(s){ return (s+'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
 
 function buildReportHeaderHTML(r){
   const role = ROLES[r.role];
-  return `
-    <div style="border-bottom:2px solid #1C3B33;padding-bottom:10px;margin-bottom:16px;">
-      <h1 style="font-size:20px;margin:0;color:#1C3B33;">Ability Therapy Clinic — Daily Report</h1>
-      <p style="margin:4px 0 0;color:#555;font-size:13px;">${role.label} · ${r.meta.date||''}</p>
-    </div>
-    <table style="width:100%;font-size:13px;margin-bottom:16px;">
-      <tr><td style="padding:2px 6px;color:#555;">Staff</td><td style="padding:2px 6px;"><b>${escapeHtml(r.meta.name||'')}</b></td>
-          <td style="padding:2px 6px;color:#555;">Location</td><td style="padding:2px 6px;"><b>${escapeHtml(r.meta.location||'')}</b></td></tr>
-      <tr><td style="padding:2px 6px;color:#555;">Position</td><td style="padding:2px 6px;"><b>${escapeHtml(r.meta.position||'')}</b></td>
-          <td style="padding:2px 6px;color:#555;">Hours</td><td style="padding:2px 6px;"><b>${r.meta.start||'—'} – ${r.meta.finish||'—'}</b></td></tr>
-    </table>`;
+  return `<div style="border-bottom:2px solid #1C3B33;padding-bottom:10px;margin-bottom:16px;"><h1 style="font-size:20px;margin:0;color:#1C3B33;">Ability Therapy Clinic — Daily Report</h1><p style="margin:4px 0 0;color:#555;font-size:13px;">${role.label} · ${r.meta.date||''}</p></div><table style="width:100%;font-size:13px;margin-bottom:16px;"><tr><td style="padding:2px 6px;color:#555;">Staff</td><td style="padding:2px 6px;"><b>${escapeHtml(r.meta.name||'')}</b></td><td style="padding:2px 6px;color:#555;">Location</td><td style="padding:2px 6px;"><b>${escapeHtml(r.meta.location||'')}</b></td></tr><tr><td style="padding:2px 6px;color:#555;">Position</td><td style="padding:2px 6px;"><b>${escapeHtml(r.meta.position||'')}</b></td><td style="padding:2px 6px;color:#555;">Hours</td><td style="padding:2px 6px;"><b>${r.meta.start||'—'} – ${r.meta.finish||'—'}</b></td></tr></table>`;
 }
+
 function buildReportSectionsHTML(r){
   const role = ROLES[r.role];
   let html = '';
@@ -757,9 +420,7 @@ function buildReportSectionsHTML(r){
     let content = '';
     if(sec.type==='table'){
       if(v && v.length){
-        content = '<table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:12px;"><tr>' +
-          sec.columns.map(c=>`<th style="background:#EEE;">${c.label}</th>`).join('') + '</tr>' +
-          v.map(row=>'<tr>'+sec.columns.map(c=>`<td>${escapeHtml(row[c.k]||'')}</td>`).join('')+'</tr>').join('') + '</table>';
+        content = '<table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:12px;"><tr>' + sec.columns.map(c=>`<th style="background:#EEE;">${c.label}</th>`).join('') + '</tr>' + v.map(row=>'<tr>'+sec.columns.map(c=>`<td>${escapeHtml(row[c.k]||'')}</td>`).join('')+'</tr>').join('') + '</table>';
       } else content = '<p style="color:#888;">— none recorded —</p>';
     } else if(sec.type==='stars'){
       content = v ? `<p>${'★'.repeat(+v)}${'☆'.repeat(5-v)} (${v}/5)</p>` : '<p style="color:#888;">— not rated —</p>';
@@ -775,13 +436,11 @@ function buildReportSectionsHTML(r){
   });
   return html;
 }
+
 function buildReportHTML(r){
   let reviewHtml = '';
   if(r.review.status || r.review.comments){
-    reviewHtml = `<div style="margin-top:18px;padding-top:10px;border-top:1px dashed #ccc;">
-      <h3 style="font-size:13px;color:#2E5C50;">Admin review</h3>
-      <p style="font-size:12.5px;"><b>Status:</b> ${r.review.status||'—'}<br><b>Comments:</b> ${escapeHtml(r.review.comments||'—')}</p>
-    </div>`;
+    reviewHtml = `<div style="margin-top:18px;padding-top:10px;border-top:1px dashed #ccc;"><h3 style="font-size:13px;color:#2E5C50;">Admin review</h3><p style="font-size:12.5px;"><b>Status:</b> ${r.review.status||'—'}<br><b>Comments:</b> ${escapeHtml(r.review.comments||'—')}</p></div>`;
   }
   return buildReportHeaderHTML(r) + buildReportSectionsHTML(r) + reviewHtml;
 }
@@ -797,9 +456,7 @@ function downloadReportPDF(id){
 
 function downloadReportWord(id){
   const r = reports.find(x=>x.id===id);
-  const html = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
-    <head><meta charset='utf-8'><title>Report</title></head>
-    <body style="font-family:Calibri, sans-serif;">${buildReportHTML(r)}</body></html>`;
+  const html = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Report</title></head><body style="font-family:Calibri, sans-serif;">${buildReportHTML(r)}</body></html>`;
   const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -813,17 +470,10 @@ function downloadReportWord(id){
 
 function exportAllToExcel(){
   if(reports.length===0){ alert('No reports to export yet.'); return; }
-  if(typeof XLSX === 'undefined'){ alert('The Excel export library did not load — check your internet connection and try again.'); return; }
+  if(typeof XLSX === 'undefined'){ alert('Excel export library not loaded. Check your internet connection.'); return; }
   const wb = XLSX.utils.book_new();
-
-  const summaryRows = reports.map(r=>({
-    Date: r.meta.date, Staff: r.meta.name, Role: r.roleLabel, Location: r.meta.location,
-    Position: r.meta.position, 'Time Started': r.meta.start, 'Time Finished': r.meta.finish,
-    Rating: r.data.rating ? `${r.data.rating}/5` : '', Flagged: r.flagged ? 'Yes' : 'No',
-    'Review Status': r.review.status || '', 'Review Comments': r.review.comments || ''
-  }));
+  const summaryRows = reports.map(r=>({Date: r.meta.date, Staff: r.meta.name, Role: r.roleLabel, Location: r.meta.location, Position: r.meta.position, 'Time Started': r.meta.start, 'Time Finished': r.meta.finish, Rating: r.data.rating ? `${r.data.rating}/5` : '', Flagged: r.flagged ? 'Yes' : 'No', 'Review Status': r.review.status || '', 'Review Comments': r.review.comments || ''}));
   XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(summaryRows), 'Summary');
-
   Object.keys(ROLES).forEach(roleKey=>{
     const roleReports = reports.filter(r=>r.role===roleKey);
     if(roleReports.length===0) return;
@@ -832,15 +482,10 @@ function exportAllToExcel(){
       const row = { Date: r.meta.date, Staff: r.meta.name, Location: r.meta.location, Position: r.meta.position };
       role.sections.forEach(sec=>{
         const v = r.data[sec.k];
-        if(sec.type==='table'){
-          row[sec.title] = (v||[]).map(item=>Object.values(item).filter(Boolean).join(' - ')).join(' | ');
-        } else if(sec.type==='stars'){
-          row[sec.title] = v ? `${v}/5` : '';
-        } else if(sec.fields){
-          sec.fields.forEach(f=>{ row[f.label] = r.data[f.k] || ''; });
-        } else {
-          row[sec.title] = v || '';
-        }
+        if(sec.type==='table') row[sec.title] = (v||[]).map(item=>Object.values(item).filter(Boolean).join(' - ')).join(' | ');
+        else if(sec.type==='stars') row[sec.title] = v ? `${v}/5` : '';
+        else if(sec.fields) sec.fields.forEach(f=>{ row[f.label] = r.data[f.k] || ''; });
+        else row[sec.title] = v || '';
       });
       row['Review Status'] = r.review.status || '';
       row['Review Comments'] = r.review.comments || '';
@@ -848,7 +493,6 @@ function exportAllToExcel(){
     });
     XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(rows), role.label.slice(0,31));
   });
-
   XLSX.writeFile(wb, `ability-clinic-daily-reports-${todayISO}.xlsx`);
 }
 
